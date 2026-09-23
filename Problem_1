@@ -1,0 +1,21 @@
+n=int(input("Enter the totanl number of monkeys :"))
+k=int(input("Enter the total number of bananas eaten by single mokey :"))
+j=int(input("Enter the total number of peanuts eaten by single monkey :"))
+m=int(input("Enter the total number of bananas :"))
+p=int(input("Enter the total number of peanuts :"))
+
+if n<0 or k<=0 or j<=0 
+  print("INVALID INPUT")
+m_bananas=m//k
+r_bananas=m%k
+m_peanuts=p//j
+r_peanuts=p%j
+t_fed=m_bananas+m_peanuts
+
+if r_bananas>0 or r_peanuts>0:
+  t_fed+=1
+m_left=n-t_fed
+if m_left<0:
+  m_left=0
+
+print("No of monkeys left in the tree:",m_left)
